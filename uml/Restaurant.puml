@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+restaurant  --|{ Menu
+Menu  --|{ Menu_item
+
+class restaurant {
+Name
+image_url
+city
+menu
+add_menu()
+}
+
+class Menu {
+title
+icon
+items
+new_item()
+}
+
+class Menu_item {
+name
+price
+}
+
+
+
+@enduml
